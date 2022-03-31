@@ -103,6 +103,7 @@ extension ContentView {
                     )
                     .opacity((vm.flagSelected != number && vm.animateFlags) ? 0.25 : 1)
                     .animation(.easeInOut, value: vm.animateFlags)
+                    .accessibilityLabel(vm.labels[vm.countries[number], default: "Unknown flag"])
             }
             .disabled(vm.disableButtons)
         }
